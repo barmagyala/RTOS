@@ -650,30 +650,30 @@ void createTask(void *task, int priority, int exec_time, int stack_size)
 	
 	void idletask(){
 	  char c[4] = "idle";
-		for (int i=0; i<4; i++){
-    HAL_UART_Transmit(&huart1,(uint8_t*)&c,1,10);
-		}
+		
+    HAL_UART_Transmit(&huart1,(uint8_t*)&c,4,10);
+		
 	}
 
   void task1(){
     char c[23] = "task1 is being executed";
-		for (int i=0; i<23; i++){
-    HAL_UART_Transmit(&huart1,(uint8_t*)&c,1,10);
-		}
+		
+    HAL_UART_Transmit(&huart1,(uint8_t*)&c,23,10);
+		
   }
 
   void task2(){
     char c[23] = "task2 is being executed";
-		for (int i=0; i<23; i++){
-    HAL_UART_Transmit(&huart1,(uint8_t*)&c,1,10);
-		}
+		
+    HAL_UART_Transmit(&huart1,(uint8_t*)&c,23,10);
+		
   }
 
   void task3(){
     char c[23] = "task3 is being executed";
-    for (int i=0; i<23; i++){
-    HAL_UART_Transmit(&huart1,(uint8_t*)&c,1,10);
-    }
+   
+    HAL_UART_Transmit(&huart1,(uint8_t*)&c,23,10);
+   
   }
 
   void Dispatch(){
