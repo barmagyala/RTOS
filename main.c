@@ -764,7 +764,7 @@ int main(void)
   /* USER CODE END WHILE */
   if (count == 1)
   {
-    createTask(task1, 4, 3, 0xFFF);
+    createTask(task1, 4, 3, 200);
     createTask(task1, 4, 3, 200);
     createTask(task1, 4, 3, 200);
   }
